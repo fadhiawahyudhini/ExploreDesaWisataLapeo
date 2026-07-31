@@ -142,19 +142,19 @@
             text-align: center;
         }
 
-        .destinasi h2, .fakta-detail-section h2, .info-rute-section h2, .peta-section h2 {
+        .destinasi h2, .fakta-detail-section h2, .website-desa-section h2, .peta-section h2 {
             font-size: 36px;
             margin-bottom: 10px;
             color: #2c3e50;
         }
 
-        .destinasi .sub-title, .peta-section .sub-title {
+        .destinasi .sub-title, .peta-section .sub-title, .website-desa-section .sub-title {
             color: #7f8c8d;
             margin-bottom: 40px;
             font-size: 16px;
         }
 
-        .destinasi h2::after, .fakta-detail-section h2::after, .info-rute-section h2::after, .peta-section h2::after {
+        .destinasi h2::after, .fakta-detail-section h2::after, .website-desa-section h2::after, .peta-section h2::after {
             content: '';
             display: block;
             width: 60px;
@@ -300,120 +300,41 @@
             line-height: 1.7;
         }
 
-        /* --- INFO & RUTE SECTION --- */
-        .info-rute-section {
+        /* --- WEBSITE RESMI DESA SECTION --- */
+        .website-desa-section {
             padding: 100px 10% 60px 10%;
             background-color: #f4f6f8;
             text-align: center;
         }
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            max-width: 1100px;
-            margin: 40px auto 0 auto;
-            text-align: left;
-        }
-
-        .info-card, .rute-card {
+        .web-card {
             background: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .info-card h3, .rute-card h3 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #0288d1;
-            padding-bottom: 10px;
-            font-size: 22px;
-        }
-
-        .info-list {
-            list-style: none;
-        }
-
-        .info-list li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 25px;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .info-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #0288d1;
-            font-weight: bold;
-        }
-
-        .timeline-rute {
-            border-left: 3px solid #0288d1;
-            margin-left: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        .rute-step {
-            margin-bottom: 25px;
-            position: relative;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 6px;
-            transition: background 0.3s ease;
-        }
-
-        .rute-step:hover {
-            background: #f0f7fc;
-        }
-
-        .rute-step:last-child {
-            margin-bottom: 0;
-        }
-
-        .rute-step::before {
-            content: '';
-            position: absolute;
-            left: -32px;
-            top: 16px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #0288d1;
-            border: 2px solid white;
-            transition: transform 0.3s ease;
-        }
-
-        .rute-step:hover::before {
-            transform: scale(1.4);
-            background-color: #01579b;
-        }
-
-        .rute-step h4 {
-            color: #0288d1;
-            font-size: 16px;
-            margin-bottom: 5px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
-        }
-        
-        .rute-step.completed h4 {
-            text-decoration: line-through;
-            color: #7f8c8d;
-        }
-        .rute-step.completed p {
-            color: #b2bec3;
+            gap: 20px;
         }
 
-        .rute-step p {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.6;
+        .web-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            max-width: 750px;
+        }
+
+        .btn-portal {
+            background-color: #27ae60;
+            box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2);
+        }
+
+        .btn-portal:hover {
+            background-color: #1e8449;
+            box-shadow: 0 6px 12px rgba(30, 132, 73, 0.3);
         }
 
         /* --- BUTTON BACK TO TOP --- */
@@ -485,7 +406,7 @@
                 <li><a href="#destinasi" class="nav-link">Destinasi</a></li>
                 <li><a href="#peta-lokasi" class="nav-link">Peta Lokasi</a></li>
                 <li><a href="#fakta-budaya" class="nav-link">Fakta Budaya</a></li>
-                <li><a href="#panduan-wisata" class="nav-link">Panduan Wisata</a></li>
+                <li><a href="#website-desa" class="nav-link">Portal Desa</a></li>
             </ul>
         </nav>
     </header>
@@ -565,39 +486,14 @@
         </div>
     </section>
 
-    <section class="info-rute-section reveal" id="panduan-wisata">
-        <h2>Panduan & Rute Kunjungan Wisatawan</h2>
+    <!-- SECTION WEBSITE RESMI DESA -->
+    <section class="website-desa-section reveal" id="website-desa">
+        <h2>Portal Layanan Resmi Desa Lapeo</h2>
+        <p class="sub-title">Akses informasi administrasi, berita terkini, dan profil pemerintahan Desa Lapeo melalui website resmi Digital Desa</p>
         
-        <div class="info-grid">
-            
-            <div class="info-card">
-                <h3>Etika & Tips Berkunjung</h3>
-                <ul class="info-list">
-                    <li><strong>Pakaian Sopan:</strong> Kenakan pakaian yang menutup aurat dan sopan saat berziarah ke area Masjid Lapeo demi menghormati nilai kesakralan tempat ibadah.</li>
-                    <li><strong>Waktu Terbaik:</strong> Datanglah pada sore hari sekitar pukul 15.30 WITA agar cuaca tidak terlalu terik dan pas saat beralih berburu sunset ke area pantai.</li>
-                    <li><strong>Jaga Kebersihan:</strong> Selalu buang sampah pada tempatnya, terutama saat berada di area pesisir Pantai Baqbatoa untuk menjaga kelestarian laut Mandar.</li>
-                    <li><strong>Coba Kuliner Lokal:</strong> Jangan lewatkan warung lokal yang menjajakan kuliner khas Mandar seperti <em>Jepa</em> (olahan singkong/sagu) atau <em>Bau Peapi</em> di sekitar jalan trans.</li>
-                </ul>
-            </div>
-
-            <div class="rute-card">
-                <h3>Rute Perjalanan Ideal (1 Hari) <br><small style="font-size: 12px; color: #7f8c8d;">(Klik rute untuk menandai tempat yang sudah dikunjungi)</small></h3>
-                <div class="timeline-rute">
-                    <div class="rute-step" onclick="toggleRoute(this)">
-                        <h4>09.00 WITA — Tiba & Ziarah Religi</h4>
-                        <p>Memulai perjalanan dengan mengunjungi Masjid Nuruttaubah Lapeo, berziarah ke makam Imam Lapeo, dan mengagumi kemegahan arsitektur serta menara masjid.</p>
-                    </div>
-                    <div class="rute-step" onclick="toggleRoute(this)">
-                        <h4>12.00 WITA — Istirahat & Kuliner Mandar</h4>
-                        <p>Menunaikan ibadah shalat Dzuhur berjamaah di masjid, dilanjutkan makan siang mencicipi berbagai hidangan kuliner laut khas Mandar yang segar di sekitar Campalagian.</p>
-                    </div>
-                    <div class="rute-step" onclick="toggleRoute(this)">
-                        <h4>15.30 WITA — Refreshing di Pantai Babatoa</h4>
-                        <p>Bertolak menuju Pantai Baqbatoa untuk bersantai menikmati hembusan angin laut Selat Makassar, menyusuri pesisir pantai, dan menunggu keindahan panorama sunset.</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="web-card">
+            <p>Untuk mendapatkan informasi lengkap seputar pemerintahan desa, transparansi publik, pengurusan surat administrasi digital, hingga kabar kegiatan masyarakat Desa Lapeo, Anda dapat mengunjungi portal resmi kami.</p>
+            <a href="https://lapeo.digitaldesa.id/" target="_blank" class="btn btn-portal">Kunjungi Website Resmi Desa Lapeo 🌐</a>
         </div>
     </section>
 
@@ -610,14 +506,13 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
-        /* --- INISIALISASI PETA LEAFLET (KOREKSI VISUAL) --- */
+        /* --- INISIALISASI PETA LEAFLET --- */
         let map;
         let markerMasjid;
         let markerPantai;
 
         function initMap() {
             try {
-                // Kamera peta di-set fokus langsung ke area Lapeo (Sisi kiri bawah frame gambar)
                 map = L.map('map').setView([-3.4925, 119.1330], 14);
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -625,11 +520,9 @@
                     attribution: '© OpenStreetMap contributors'
                 }).addTo(map);
 
-                // Marker Masjid Imam Lapeo (Sisi kiri dekat jalan Lemo/Panyampa)
                 markerMasjid = L.marker([-3.4901, 119.1322]).addTo(map);
                 markerMasjid.bindPopup("<h4>Masjid Nuruttaubah Lapeo</h4><p>Pusat ziarah religi KH. Muhammad Thahir (Imam Lapeo).<br><b>Lokasi:</b> Lapeo, Kec. Campalagian.</p>");
 
-                // Marker Pantai Babatoa (Pesisir lengkungan bawah Lapeo)
                 markerPantai = L.marker([-3.4975, 119.1305]).addTo(map);
                 markerPantai.bindPopup("<h4>Pantai Babatoa</h4><p>Destinasi pesisir pantai eksotis Selat Makassar.<br><b>Lokasi:</b> Pesisir Lapeo, Kec. Campalagian.</p>");
 
@@ -649,7 +542,7 @@
                 petaSection.scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => {
                     if (map) {
-                        map.setView([lat, lng], 16); // Fokus zoom diperdekat pas klik tombol
+                        map.setView([lat, lng], 16);
                         map.invalidateSize(); 
                         if (namaTempat === 'Masjid Lapeo' && markerMasjid) markerMasjid.openPopup();
                         if (namaTempat === 'Pantai Baqbatoa' && markerPantai) markerPantai.openPopup();
@@ -659,10 +552,6 @@
         }
 
         /* --- FITUR INTERAKTIF ALL-IN-ONE --- */
-        function toggleRoute(element) {
-            element.classList.toggle('completed');
-        }
-
         const backToTopBtn = document.getElementById("backToTop");
         const navbar = document.getElementById("navbar");
 
