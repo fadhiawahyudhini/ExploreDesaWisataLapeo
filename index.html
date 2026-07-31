@@ -218,52 +218,6 @@
             overflow: hidden;
         }
 
-        /* --- POJOK MANGROVE SECTION --- */
-        .mangrove-section {
-            padding: 100px 10% 60px 10%;
-            background-color: #ffffff;
-            text-align: center;
-        }
-
-        .mangrove-card {
-            background: white;
-            border-radius: 12px;
-            max-width: 1000px;
-            margin: 0 auto;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-
-        .mangrove-img-box {
-            width: 100%;
-            max-height: 450px;
-            overflow: hidden;
-        }
-
-        .mangrove-img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .mangrove-content {
-            padding: 35px;
-            text-align: justify;
-        }
-
-        .mangrove-content p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .mangrove-content p:last-child {
-            margin-bottom: 0;
-        }
-
         /* --- PETA INTERAKTIF SECTION --- */
         .peta-section {
             padding: 100px 10% 60px 10%;
@@ -386,6 +340,52 @@
             box-shadow: 0 6px 12px rgba(30, 132, 73, 0.3);
         }
 
+        /* --- POJOK MANGROVE SECTION --- */
+        .mangrove-section {
+            padding: 100px 10% 60px 10%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .mangrove-card {
+            background: white;
+            border-radius: 12px;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .mangrove-img-box {
+            width: 100%;
+            max-height: 450px;
+            overflow: hidden;
+        }
+
+        .mangrove-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .mangrove-content {
+            padding: 35px;
+            text-align: justify;
+        }
+
+        .mangrove-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .mangrove-content p:last-child {
+            margin-bottom: 0;
+        }
+
         /* --- BUTTON BACK TO TOP --- */
         #backToTop {
             position: fixed;
@@ -453,10 +453,10 @@
             <ul>
                 <li><a href="#" class="nav-link active">Beranda</a></li>
                 <li><a href="#destinasi" class="nav-link">Destinasi</a></li>
-                <li><a href="#pojok-mangrove" class="nav-link">Pojok Mangrove</a></li>
                 <li><a href="#peta-lokasi" class="nav-link">Peta Lokasi</a></li>
                 <li><a href="#fakta-budaya" class="nav-link">Fakta Budaya</a></li>
                 <li><a href="#website-desa" class="nav-link">Portal Desa</a></li>
+                <li><a href="#pojok-mangrove" class="nav-link">Pojok Mangrove</a></li>
             </ul>
         </nav>
     </header>
@@ -520,22 +520,6 @@
         </div>
     </section>
 
-    <!-- SECTION POJOK MANGROVE -->
-    <section class="mangrove-section reveal" id="pojok-mangrove">
-        <h2>Pojok Mangrove</h2>
-        <p class="sub-title">Menjelajahi Kekayaan Ekosistem Pesisir dan Potensi Agroindustri Desa Lapeo</p>
-        
-        <div class="mangrove-card">
-            <div class="mangrove-img-box">
-                <img src="images/mangrove_judul.jpg" alt="Ekosistem Pojok Mangrove Lapeo">
-            </div>
-            <div class="mangrove-content">
-                <p>Ekosistem mangrove merupakan suatu ekosistem peralihan antara darat dan laut. Di daerah-daerah dengan tanah berlumpur dalam, <em>Rhizophora mucronata</em> merupakan vegetasi yang dominan, sedangkan daerah-daerah yang berlumpur dangkal didominasi oleh <em>Rhizophora apiculata</em>. Bila tanah banyak mengandung pasir atau karang maka <em>Rhizophora stylosa</em> yang mendominasi.</p>
-                <p>Ekosistem ini merupakan salah satu ekosistem pesisir yang memiliki fungsi ekologis dan ekonomis sebagai agroindustri. Potensi fungsi ekonomis dapat diperoleh melalui bagian-bagian pohon seperti buah, batang, dan beberapa bagian tubuh lainnya.</p>
-            </div>
-        </div>
-    </section>
-
     <section class="peta-section reveal" id="peta-lokasi">
         <h2>Peta Geografis Wisata Desa Lapeo</h2>
         <p class="sub-title">Gunakan peta interaktif ini untuk menjelajahi titik koordinat objek wisata utama di Campalagian secara real-time</p>
@@ -571,6 +555,22 @@
         <div class="web-card">
             <p>Untuk mendapatkan informasi lengkap seputar pemerintahan desa, transparansi publik, pengurusan surat administrasi digital, hingga kabar kegiatan masyarakat Desa Lapeo, Anda dapat mengunjungi portal resmi kami.</p>
             <a href="https://lapeo.digitaldesa.id/" target="_blank" class="btn btn-portal">Kunjungi Website Resmi Desa Lapeo 🌐</a>
+        </div>
+    </section>
+
+    <!-- SECTION POJOK MANGROVE (POSISI PALING BAWAH) -->
+    <section class="mangrove-section reveal" id="pojok-mangrove">
+        <h2>Pojok Mangrove</h2>
+        <p class="sub-title">Menjelajahi Kekayaan Ekosistem Pesisir dan Potensi Agroindustri Desa Lapeo</p>
+        
+        <div class="mangrove-card">
+            <div class="mangrove-img-box">
+                <img src="images/mangrove_judul.jpg" alt="Ekosistem Pojok Mangrove Lapeo">
+            </div>
+            <div class="mangrove-content">
+                <p>Ekosistem mangrove merupakan suatu ekosistem peralihan antara darat dan laut. Di daerah-daerah dengan tanah berlumpur dalam, <em>Rhizophora mucronata</em> merupakan vegetasi yang dominan, sedangkan daerah-daerah yang berlumpur dangkal didominasi oleh <em>Rhizophora apiculata</em>. Bila tanah banyak mengandung pasir atau karang maka <em>Rhizophora stylosa</em> yang mendominasi.</p>
+                <p>Ekosistem ini merupakan salah satu ekosistem pesisir yang memiliki fungsi ekologis dan ekonomis sebagai agroindustri. Potensi fungsi ekonomis dapat diperoleh melalui bagian-bagian pohon seperti buah, batang, dan beberapa bagian tubuh lainnya.</p>
+            </div>
         </div>
     </section>
 
