@@ -142,19 +142,19 @@
             text-align: center;
         }
 
-        .destinasi h2, .fakta-detail-section h2, .website-desa-section h2, .peta-section h2, .jenis-mangrove-section h2, .mangrove-section h2 {
+        .destinasi h2, .fakta-detail-section h2, .website-desa-section h2, .peta-section h2, .peta-zonasi-section h2, .jenis-mangrove-section h2, .mangrove-section h2 {
             font-size: 36px;
             margin-bottom: 10px;
             color: #2c3e50;
         }
 
-        .destinasi .sub-title, .peta-section .sub-title, .website-desa-section .sub-title, .jenis-mangrove-section .sub-title, .mangrove-section .sub-title {
+        .destinasi .sub-title, .peta-section .sub-title, .peta-zonasi-section .sub-title, .website-desa-section .sub-title, .jenis-mangrove-section .sub-title, .mangrove-section .sub-title {
             color: #7f8c8d;
             margin-bottom: 40px;
             font-size: 16px;
         }
 
-        .destinasi h2::after, .fakta-detail-section h2::after, .website-desa-section h2::after, .peta-section h2::after, .jenis-mangrove-section h2::after, .mangrove-section h2::after {
+        .destinasi h2::after, .fakta-detail-section h2::after, .website-desa-section h2::after, .peta-section h2::after, .peta-zonasi-section h2::after, .jenis-mangrove-section h2::after, .mangrove-section h2::after {
             content: '';
             display: block;
             width: 60px;
@@ -259,9 +259,46 @@
             margin: 0;
         }
 
+        /* --- PETA ZONASI PANTAI SECTION --- */
+        .peta-zonasi-section {
+            padding: 100px 10% 60px 10%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .zonasi-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            max-width: 1100px;
+            margin: 0 auto;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+        }
+
+        .zonasi-img-box {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .zonasi-img-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .zonasi-img-box img:hover {
+            transform: scale(1.01);
+        }
+
         /* --- FAKTA UNIK DETAIL SECTION --- */
         .fakta-detail-section {
-            background-color: #ffffff;
+            background-color: #f4f6f8;
             padding: 100px 10% 60px 10%;
             text-align: center;
         }
@@ -306,12 +343,12 @@
         /* --- WEBSITE RESMI DESA SECTION --- */
         .website-desa-section {
             padding: 100px 10% 60px 10%;
-            background-color: #f4f6f8;
+            background-color: #ffffff;
             text-align: center;
         }
 
         .web-card {
-            background: white;
+            background: #f8fafc;
             padding: 40px;
             border-radius: 12px;
             max-width: 900px;
@@ -321,6 +358,7 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
+            border: 1px solid #e2e8f0;
         }
 
         .web-card p {
@@ -343,12 +381,12 @@
         /* --- POJOK MANGROVE SECTION --- */
         .mangrove-section {
             padding: 100px 10% 60px 10%;
-            background-color: #ffffff;
+            background-color: #f4f6f8;
             text-align: center;
         }
 
         .mangrove-card {
-            background: #f8fafc;
+            background: #ffffff;
             border-radius: 12px;
             max-width: 1000px;
             margin: 0 auto;
@@ -389,7 +427,7 @@
         /* --- MENGENAL JENIS MANGROVE SECTION --- */
         .jenis-mangrove-section {
             padding: 100px 10% 60px 10%;
-            background-color: #f4f6f8;
+            background-color: #ffffff;
             text-align: center;
         }
 
@@ -528,6 +566,7 @@
                 <li><a href="#" class="nav-link active">Beranda</a></li>
                 <li><a href="#destinasi" class="nav-link">Destinasi</a></li>
                 <li><a href="#peta-lokasi" class="nav-link">Peta Lokasi</a></li>
+                <li><a href="#peta-zonasi" class="nav-link">Peta Zonasi</a></li>
                 <li><a href="#fakta-budaya" class="nav-link">Fakta Budaya</a></li>
                 <li><a href="#website-desa" class="nav-link">Portal Desa</a></li>
                 <li><a href="#pojok-mangrove" class="nav-link">Pojok Mangrove</a></li>
@@ -595,12 +634,25 @@
         </div>
     </section>
 
+    <!-- SECTION PETA LOKASI INTERAKTIF -->
     <section class="peta-section reveal" id="peta-lokasi">
         <h2>Peta Geografis Wisata Desa Lapeo</h2>
         <p class="sub-title">Gunakan peta interaktif ini untuk menjelajahi titik koordinat objek wisata utama di Campalagian secara real-time</p>
         
         <div class="map-container-box">
             <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- SECTION PETA ZONASI PANTAI (DITAMBAHKAN TEPAT DI BAWAH PETA INTERAKTIF) -->
+    <section class="peta-zonasi-section reveal" id="peta-zonasi">
+        <h2>Peta Zonasi Pantai</h2>
+        <p class="sub-title">Peta tata ruang dan zonasi wilayah pesisir pantai Desa Lapeo</p>
+        
+        <div class="zonasi-card">
+            <div class="zonasi-img-box">
+                <img src="layout_dean.png" alt="Peta Zonasi Pantai Lapeo">
+            </div>
         </div>
     </section>
 
