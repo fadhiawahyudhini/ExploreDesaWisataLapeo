@@ -142,19 +142,19 @@
             text-align: center;
         }
 
-        .destinasi h2, .fakta-detail-section h2, .website-desa-section h2, .peta-section h2, .mangrove-section h2 {
+        .destinasi h2, .fakta-detail-section h2, .website-desa-section h2, .peta-section h2, .jenis-mangrove-section h2, .mangrove-section h2 {
             font-size: 36px;
             margin-bottom: 10px;
             color: #2c3e50;
         }
 
-        .destinasi .sub-title, .peta-section .sub-title, .website-desa-section .sub-title, .mangrove-section .sub-title {
+        .destinasi .sub-title, .peta-section .sub-title, .website-desa-section .sub-title, .jenis-mangrove-section .sub-title, .mangrove-section .sub-title {
             color: #7f8c8d;
             margin-bottom: 40px;
             font-size: 16px;
         }
 
-        .destinasi h2::after, .fakta-detail-section h2::after, .website-desa-section h2::after, .peta-section h2::after, .mangrove-section h2::after {
+        .destinasi h2::after, .fakta-detail-section h2::after, .website-desa-section h2::after, .peta-section h2::after, .jenis-mangrove-section h2::after, .mangrove-section h2::after {
             content: '';
             display: block;
             width: 60px;
@@ -340,10 +340,84 @@
             box-shadow: 0 6px 12px rgba(30, 132, 73, 0.3);
         }
 
+        /* --- MENGENAL JENIS MANGROVE SECTION --- */
+        .jenis-mangrove-section {
+            padding: 100px 10% 60px 10%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .species-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .species-card {
+            background: #f8fafc;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .species-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: #0288d1;
+        }
+
+        .species-img-box {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .species-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .species-card:hover .species-img-box img {
+            transform: scale(1.08);
+        }
+
+        .species-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .species-content h3 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-style: italic;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        .species-content p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
         /* --- POJOK MANGROVE SECTION --- */
         .mangrove-section {
             padding: 100px 10% 60px 10%;
-            background-color: #ffffff;
+            background-color: #f4f6f8;
             text-align: center;
         }
 
@@ -456,6 +530,7 @@
                 <li><a href="#peta-lokasi" class="nav-link">Peta Lokasi</a></li>
                 <li><a href="#fakta-budaya" class="nav-link">Fakta Budaya</a></li>
                 <li><a href="#website-desa" class="nav-link">Portal Desa</a></li>
+                <li><a href="#jenis-mangrove" class="nav-link">Jenis Mangrove</a></li>
                 <li><a href="#pojok-mangrove" class="nav-link">Pojok Mangrove</a></li>
             </ul>
         </nav>
@@ -558,7 +633,77 @@
         </div>
     </section>
 
-    <!-- SECTION POJOK MANGROVE (POSISI PALING BAWAH) -->
+    <!-- SECTION MENGENAL JENIS MANGROVE -->
+    <section class="jenis-mangrove-section reveal" id="jenis-mangrove">
+        <h2>Mengenal Jenis Mangrove</h2>
+        <p class="sub-title">Keanekaragaman spesies vegetasi mangrove serta potensi pemanfaatannya di kawasan pesisir</p>
+
+        <div class="species-grid">
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/sonneratia_alba.jpg" alt="Sonneratia alba">
+                </div>
+                <div class="species-content">
+                    <h3>Sonneratia alba</h3>
+                    <p><em>Sonneratia alba</em> dimanfaatkan masyarakat pesisir sebagai tanaman obat dan sumber pangan. Di Pulau Mantehage, spesies yang dikenal sebagai lusiang digunakan untuk mengatasi nyeri otot, sakit pinggang, nyeri tulang, dan gangguan persendian (Abubakar, 2019). Buahnya yang bercita rasa asam diolah menjadi sirup, dodol, selai, jus, dan permen, sedangkan daun mudanya dikonsumsi sebagai sayuran. Kulit batang dan daunnya mengandung flavonoid, fenol, dan tanin sehingga berpotensi sebagai bahan baku produk herbal, antioksidan, serta kosmetik berbasis bahan alam.</p>
+                </div>
+            </div>
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/rhizophora_stylosa.jpg" alt="Rhizophora stylosa">
+                </div>
+                <div class="species-content">
+                    <h3>Rhizophora stylosa</h3>
+                    <p><em>Rhizophora stylosa</em> (bakau, bako-kurap, tongke besar, atau bakau pasir) dimanfaatkan secara tradisional sebagai obat rematik, kolesterol, hipertensi, demam, antioksidan, dan antiseptik (Prasetyo dkk., 2023). Ekstrak etanolnya juga berpotensi sebagai antidiabetes karena mengandung flavonoid, alkaloid, tanin, dan saponin. Kulit batangnya kaya tanin dan fenolik yang dapat dimanfaatkan sebagai pewarna alami kain (Paryanto dkk., 2020), penyamak kulit, serta pewarna jaring ikan oleh masyarakat Bajo. Kayunya dimanfaatkan sebagai bahan bangunan, kayu bakar, arang, serta peralatan tradisional seperti bumerang dan tombak di Australia.</p>
+                </div>
+            </div>
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/rhizophora_mucronata.jpg" alt="Rhizophora mucronata">
+                </div>
+                <div class="species-content">
+                    <h3>Rhizophora mucronata</h3>
+                    <p><em>Rhizophora mucronata</em> mengandung tanin, fenolat, klorofil, karotenoid, dan alkaloid yang berpotensi sebagai antidiabetes. Ekstrak metanol daun memiliki aktivitas penurunan glukosa darah lebih tinggi dibandingkan ekstrak n-heksan karena mengandung alkaloid, flavonoid, tanin, dan fenolik (Sain dkk., 2020). Maserat buahnya juga efektif sebagai pengawet ikan mujair hingga 24 jam pada konsentrasi 40% (Hajrianai dkk., 2025). Selain itu, kulit kayu, limbah propagul, dan serasah daun dimanfaatkan sebagai sumber pewarna alami tekstil karena kandungan taninnya yang tinggi (Dewi dkk., 2018).</p>
+                </div>
+            </div>
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/rhizophora_apiculata.jpg" alt="Rhizophora apiculata">
+                </div>
+                <div class="species-content">
+                    <h3>Rhizophora apiculata</h3>
+                    <p><em>Rhizophora apiculata</em> telah lama dimanfaatkan sebagai obat tradisional untuk muntah, rematik, nyeri otot, luka dalam, tuberkulosis, dan penyembuhan luka. Khasiat tersebut berkaitan dengan kandungan tanin, flavonoid, dan saponin. Aktivitas antioksidan tertinggi terdapat pada kulit batang (Khairun dan Desty, 2018), sehingga berpotensi sebagai bahan baku produk kesehatan dan kosmetik. Selain itu, kayunya menghasilkan arang bakau berkualitas tinggi, buahnya dapat diolah menjadi tepung alternatif, sedangkan kulit batangnya dimanfaatkan sebagai bahan penyamak kulit dan pewarna alami.</p>
+                </div>
+            </div>
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/bruguiera_gymnorrhiza.jpg" alt="Bruguiera gymnorrhiza">
+                </div>
+                <div class="species-content">
+                    <h3>Bruguiera gymnorrhiza</h3>
+                    <p><em>Bruguiera gymnorrhiza</em> kaya senyawa bioaktif yang berpotensi sebagai antimikroba alami. Senyawa tersebut dapat dimanfaatkan sebagai pengawet alami produk perikanan (Patimah dkk., 2019). Kulit batangnya yang kaya tanin juga digunakan sebagai bahan penyamak kulit, pewarna alami, antioksidan, serta bahan baku farmasi dan kosmetik. Buah atau propagulnya secara tradisional dimanfaatkan untuk mengobati mangir (infeksi jamur pada lidah) pada balita.</p>
+                </div>
+            </div>
+
+            <div class="species-card">
+                <div class="species-img-box">
+                    <img src="images/nypa_fruticans.jpg" alt="Nypa fruticans">
+                </div>
+                <div class="species-content">
+                    <h3>Nypa fruticans</h3>
+                    <p><em>Nypa fruticans</em> (nipah) memiliki nilai ekonomi tinggi karena hampir seluruh bagiannya dapat dimanfaatkan. Buahnya diolah menjadi tepung, dodol, manisan, dan pangan fungsional. Nira bunganya dimanfaatkan untuk menghasilkan gula nipah, sirup, cuka, dan bioetanol. Daunnya digunakan sebagai bahan atap dan kerajinan, sedangkan pelepahnya diolah menjadi arang dan biochar. Selain itu, daun muda secara tradisional digunakan untuk menghentikan perdarahan luka karena diduga mampu meningkatkan proses koagulasi darah (Abubakar, 2019).</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION POJOK MANGROVE -->
     <section class="mangrove-section reveal" id="pojok-mangrove">
         <h2>Pojok Mangrove</h2>
         <p class="sub-title">Menjelajahi Kekayaan Ekosistem Pesisir dan Potensi Agroindustri Desa Lapeo</p>
