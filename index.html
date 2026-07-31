@@ -340,10 +340,56 @@
             box-shadow: 0 6px 12px rgba(30, 132, 73, 0.3);
         }
 
+        /* --- POJOK MANGROVE SECTION --- */
+        .mangrove-section {
+            padding: 100px 10% 60px 10%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .mangrove-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .mangrove-img-box {
+            width: 100%;
+            max-height: 450px;
+            overflow: hidden;
+        }
+
+        .mangrove-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .mangrove-content {
+            padding: 35px;
+            text-align: justify;
+        }
+
+        .mangrove-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .mangrove-content p:last-child {
+            margin-bottom: 0;
+        }
+
         /* --- MENGENAL JENIS MANGROVE SECTION --- */
         .jenis-mangrove-section {
             padding: 100px 10% 60px 10%;
-            background-color: #ffffff;
+            background-color: #f4f6f8;
             text-align: center;
         }
 
@@ -357,7 +403,7 @@
         }
 
         .species-card {
-            background: #f8fafc;
+            background: #ffffff;
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #e2e8f0;
@@ -412,52 +458,6 @@
             color: #555;
             line-height: 1.7;
             text-align: justify;
-        }
-
-        /* --- POJOK MANGROVE SECTION --- */
-        .mangrove-section {
-            padding: 100px 10% 60px 10%;
-            background-color: #f4f6f8;
-            text-align: center;
-        }
-
-        .mangrove-card {
-            background: white;
-            border-radius: 12px;
-            max-width: 1000px;
-            margin: 0 auto;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-
-        .mangrove-img-box {
-            width: 100%;
-            max-height: 450px;
-            overflow: hidden;
-        }
-
-        .mangrove-img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .mangrove-content {
-            padding: 35px;
-            text-align: justify;
-        }
-
-        .mangrove-content p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .mangrove-content p:last-child {
-            margin-bottom: 0;
         }
 
         /* --- BUTTON BACK TO TOP --- */
@@ -530,8 +530,8 @@
                 <li><a href="#peta-lokasi" class="nav-link">Peta Lokasi</a></li>
                 <li><a href="#fakta-budaya" class="nav-link">Fakta Budaya</a></li>
                 <li><a href="#website-desa" class="nav-link">Portal Desa</a></li>
-                <li><a href="#jenis-mangrove" class="nav-link">Jenis Mangrove</a></li>
                 <li><a href="#pojok-mangrove" class="nav-link">Pojok Mangrove</a></li>
+                <li><a href="#jenis-mangrove" class="nav-link">Jenis Mangrove</a></li>
             </ul>
         </nav>
     </header>
@@ -633,6 +633,22 @@
         </div>
     </section>
 
+    <!-- SECTION POJOK MANGROVE -->
+    <section class="mangrove-section reveal" id="pojok-mangrove">
+        <h2>Pojok Mangrove</h2>
+        <p class="sub-title">Menjelajahi Kekayaan Ekosistem Pesisir dan Potensi Agroindustri Desa Lapeo</p>
+        
+        <div class="mangrove-card">
+            <div class="mangrove-img-box">
+                <img src="images/mangrove_judul.jpg" alt="Ekosistem Pojok Mangrove Lapeo">
+            </div>
+            <div class="mangrove-content">
+                <p>Ekosistem mangrove merupakan suatu ekosistem peralihan antara darat dan laut. Di daerah-daerah dengan tanah berlumpur dalam, <em>Rhizophora mucronata</em> merupakan vegetasi yang dominan, sedangkan daerah-daerah yang berlumpur dangkal didominasi oleh <em>Rhizophora apiculata</em>. Bila tanah banyak mengandung pasir atau karang maka <em>Rhizophora stylosa</em> yang mendominasi.</p>
+                <p>Ekosistem ini merupakan salah satu ekosistem pesisir yang memiliki fungsi ekologis dan ekonomis sebagai agroindustri. Potensi fungsi ekonomis dapat diperoleh melalui bagian-bagian pohon seperti buah, batang, dan beberapa bagian tubuh lainnya.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- SECTION MENGENAL JENIS MANGROVE -->
     <section class="jenis-mangrove-section reveal" id="jenis-mangrove">
         <h2>Mengenal Jenis Mangrove</h2>
@@ -700,22 +716,6 @@
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- SECTION POJOK MANGROVE -->
-    <section class="mangrove-section reveal" id="pojok-mangrove">
-        <h2>Pojok Mangrove</h2>
-        <p class="sub-title">Menjelajahi Kekayaan Ekosistem Pesisir dan Potensi Agroindustri Desa Lapeo</p>
-        
-        <div class="mangrove-card">
-            <div class="mangrove-img-box">
-                <img src="images/mangrove_judul.jpg" alt="Ekosistem Pojok Mangrove Lapeo">
-            </div>
-            <div class="mangrove-content">
-                <p>Ekosistem mangrove merupakan suatu ekosistem peralihan antara darat dan laut. Di daerah-daerah dengan tanah berlumpur dalam, <em>Rhizophora mucronata</em> merupakan vegetasi yang dominan, sedangkan daerah-daerah yang berlumpur dangkal didominasi oleh <em>Rhizophora apiculata</em>. Bila tanah banyak mengandung pasir atau karang maka <em>Rhizophora stylosa</em> yang mendominasi.</p>
-                <p>Ekosistem ini merupakan salah satu ekosistem pesisir yang memiliki fungsi ekologis dan ekonomis sebagai agroindustri. Potensi fungsi ekonomis dapat diperoleh melalui bagian-bagian pohon seperti buah, batang, dan beberapa bagian tubuh lainnya.</p>
-            </div>
         </div>
     </section>
 
